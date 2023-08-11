@@ -7,6 +7,10 @@ public class Musica extends Audio{
     private String album;
     private String genero;
 
+    public Musica(String titulo, int duracao) {
+        super(titulo, duracao);
+    }
+
     public String getCantor() {
         return cantor;
     }

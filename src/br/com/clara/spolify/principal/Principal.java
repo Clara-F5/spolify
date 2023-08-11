@@ -9,13 +9,11 @@ import java.util.ArrayList;
 public class Principal {
     public static void main(String[] args) {
 
-        Musica musica = new Musica();
-        musica.setTitulo("ETA");
+        Musica musica = new Musica("ETA", 3);
         musica.setCantor("New Jeans");
         musica.setGenero("K-pop");
 
-        Musica outraMusica = new Musica();
-        outraMusica.setTitulo("Blue Flame");
+        Musica outraMusica = new Musica("Blue flame", 2);
         outraMusica.setCantor("Le Sserafim");
         outraMusica.setGenero("K-pop");
 

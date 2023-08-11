@@ -7,6 +7,11 @@ public class Audio {
     private int curtidas;
     private int classificacao;
 
+    public Audio(String titulo, int duracao){
+        this.titulo = titulo;
+        this.duracao = duracao;
+    }
+
     public String getTitulo() {
         return titulo;
     }

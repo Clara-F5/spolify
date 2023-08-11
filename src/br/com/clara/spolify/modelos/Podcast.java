@@ -4,6 +4,10 @@ public class Podcast extends Audio{
     private String descricao;
     private String host;
 
+    public Podcast(String titulo, int duracao) {
+        super(titulo, duracao);
+    }
+
     public String getDescricao() {
         return descricao;
     }
