@@ -63,4 +63,9 @@ public class Musica extends Audio{
         }
         return super.getClassificacao();
     }
+
+    @Override
+    public String toString() {
+        return "Musica: " +this.getTitulo() + "(" +this.getCantor() +")";
+    }
 }
