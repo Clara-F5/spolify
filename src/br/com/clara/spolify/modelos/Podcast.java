@@ -34,4 +34,8 @@ public class Podcast extends Audio{
         }
         return super.getClassificacao();
     }
+    @Override
+    public String toString() {
+        return "Podcast: " +this.getTitulo() + "(" +this.getHost() +")";
+    }
 }

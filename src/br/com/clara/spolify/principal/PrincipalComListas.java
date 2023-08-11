@@ -5,13 +5,17 @@ import br.com.clara.spolify.modelos.Musica;
 import br.com.clara.spolify.modelos.Podcast;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class PrincipalComListas {
     public static void main(String[] args) {
 
         Musica jeans = new Musica("SuperShy", 3);
+        jeans.setCantor("New jeans");
         Musica blink = new Musica("Typa Girl", 3);
+        blink.setCantor("BlackPink");
         Podcast modus = new Podcast("Modus Operandi", 50);
+        modus.setHost("Carol Moreira e Mabê Bonafé");
 
         ArrayList<Audio> lista = new ArrayList<>();
         lista.add(jeans);
@@ -32,5 +36,7 @@ public class PrincipalComListas {
                 System.out.println("Curtidas: "+musica.getCurtidas());
             }
         }
+        Collections.sort(lista);
+        System.out.println(lista);
     }
 }
